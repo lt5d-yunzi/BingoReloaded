@@ -1,0 +1,185 @@
+name: "Chinese"
+changed: "语言已经切换到简体中文！"
+command:
+  use: "Usage: {0}" # 0: cmd usage
+  bingo:
+    use: "Usage: {0}" # 0: /bingo usage
+    no_deathmatch: "当没有游戏活动时，无法开始死亡比赛！"
+  card:
+    no_name: "请提供卡名: {0}" # 0: command
+    no_remove: "无法移除 '{0}', 确保拼写正确！" # 0: card name
+    removed: " '{0}' 成功移除" # 0: card name
+  list:
+    no_name: "请提供项目列表名称: {0}" # 0: command
+    no_remove: "无法移除 '{0}', 确保拼写正确！" # 0: item list name
+    removed: "物品列表 '{0}' 成功移除" # 0: item list name
+game:
+  timer:
+    duration: "游戏持续时间: {0}" # 0: total game time duration
+    time_left: "剩余时间: {0}" # 0: total game time left (for Countdown cards)
+  lobby:
+    settings_updated: "游戏设置已更新，请查看计分板!"
+    wait_status: "等待玩家..."
+    player_status: "{0} 玩家加入一个团队" # 0: player count
+    starting_status: "游戏在 {0} 秒后开始!" # 0: starting time (seconds)
+    vote_kit: "为装备投票"
+    vote_gamemode: "为游戏模式投票"
+    vote_card: "为卡片投票"
+    vote_count: "{0} 游戏玩家投票给 {1} {2}" # 0: player count, 1: vote category, 2: vote item
+    vote_won: "{0} {1} 票数最多!" # 0: vote category, 1: vote item
+  start:
+    no_players: "Bingo 游戏无法在没有玩家加入时开始 :("
+    already_started: "已经开始一场bingo游戏!"
+    give_cards: "向所有参赛者发放装备和卡片!"
+    no_card: "无法使用 '{0}' 卡片开始游戏 ，卡片不存在!" # 0: card_name
+  end:
+    bingo: "恭喜!  {0} 团队 Bingo!" # 0: winning team
+    restart: "&a&o&l游戏结束! 点击 //&c&o重新开始! //&a&o&l点击以相同的规则和团队重新开始游戏!//"
+  postgame:
+    start: "这场游戏将在 {0} 秒后重新开始" # 0: time until restart (seconds)
+  deathmatch:
+    start: "几支队伍完成了相同数量的任务，开始死亡竞赛以打破平局!"
+    search: "找到聊天中列出的项目即可赢得游戏!"
+    item: "死亡竞赛 - 成为第一个赢得此物品的人: {0}" # 0: item name
+  player:
+    leave: "你已离开游戏!" # 0: /bingo command
+    no_start: "游戏还没开始!"
+    no_card: "找不到你的卡片!"
+    cooldown: "你不能使用此物品用于 {0} 秒!" # 0: time left
+    respawn: "//&3&l点击这里传送回你上次死亡点////"
+  team:
+    no_join: "不能加入一个正在进行的游戏!"
+    join: "成功加入 {0} 团队!" # 0: team name
+    join_auto: "当游戏开始时，您将自动加入任意一个团队!"
+    dropped: " {0} 团队无法获得胜利，他们出局了!" # 0: team name
+    voided: " {0} 团队在这场游戏中出局了 of the game!" # 0: team name
+    no_chat: "无法切换到团队聊天，你不在团队内!"
+    chat_off: "&f团队聊天已 &c关闭&r, 使用 {0} 启用团队聊天" # 0: /btc
+    chat_on: "&f团队聊天已 &a开启&r, 使用 {0} 禁用团队聊天." # 0: /btc
+    size_changed: "最大团队规模已更改，请重新加入您选择的团队!"
+    full_team_desc: "这个团队人数已满"
+    join_team_desc: "点击加入这个团队"
+  item:
+    lore: "获得 {0} 物品完成这个任务!" # 0: item count
+    lore_advancement: "点击我了解更多!"
+    lore_statistic: "获取以下量的物品完成任务!"
+    completed: "{1} 获得 {0} 在 {2}" # 0: item name, 1: team, 2: completion time
+    complete_lore: "{0} \n在 {1} 完成" # 0: team, 1: completion time
+menu:
+  save: "保存"
+  exit: "关闭菜单"
+  save_exit: "保存并退出"
+  accept: "接受并关闭"
+  next: "下一页"
+  prev: "上一页"
+  filter: "过滤..."
+  clear: "清除过滤/ 取消"
+  completed: "已经完成的任务"
+  card:
+    title: "查看卡片"
+    info_regular:
+      name: "普通 Bingo 卡片"
+      desc: "当一队收集的物品占据 一整行/列/对角线 时获胜"
+    info_lockout:
+      name: "锁定 Bingo 卡片"
+      desc: "完成最多的任务即可获胜。 \n当一个任务被一队完成时，其他队伍不能做已完成的任务。"
+    info_complete:
+      name: "完成所有 Bingo 卡片"
+      desc: "第一个完成的队伍获胜."
+  options:
+    title: "选项菜单"
+    start: "开始游戏"
+    end: "结束游戏"
+    team: "加入一个队伍"
+    leave: "离开游戏"
+    kit: "装备"
+    card: "卡片"
+    mode: "游戏模式"
+    effects: "玩家效果"
+    vote: "为设置投票"
+  effects:
+    enable: "单机启用此效果选项"
+    disable: "单机禁用此效果选项"
+    enabled: "启用"
+    disabled: "禁用"
+    night_vision: "夜间"
+    water_breath: "水下呼吸"
+    fire_res: "抗火"
+    no_fall_dmg: "无坠落伤害"
+    no_durability: "无限耐久"
+    speed: "速度"
+  kits:
+    hardcore:
+      name: "&4极限生存"
+      desc: "这套装备包括： \n
+      \n
+          - 无任何装备，祝你好运！"
+    normal:
+      name: "&e普通装备"
+      desc: "这套装备包括： \n
+      \n
+          - 铁斧头 \n
+          - 铁镐 \n
+          - 铁铲（丝绸之触） \n
+          - 32个烤土豆 \n
+          - 皮革头盔 \n
+          - 皮革靴子"
+    overpowered:
+      name: "&5超强装备"
+      desc: "这套装备包括： \n
+      \n
+          - 下界合金斧头 \n
+          - 下界合金镐 \n
+          - 下界合金铲（丝绸之触） \n
+          - 64个金胡萝卜 \n
+          - 上升之杖 \n
+          - 皮革头盔 \n
+          - 皮革靴子"
+    reloaded:
+      name: "&3重装装备"
+      desc: "这套装备包括： \n
+      \n
+          - 下界合金斧头 \n
+          - 下界合金镐 \n
+          - 下界合金铲（丝绸之触） \n
+          - 64个金胡萝卜 \n
+          - 上升之杖 \n
+          - 皮革头盔 \n
+          - 鳞翅（耐久度 X） \n
+          - 皮革靴子"
+
+    custom: "自定义"
+items:
+  card:
+    name: "Bingo 卡片"
+    desc: "点击以打开 Bingo 卡片！"
+  wand:
+    name: "上升之杖"
+    desc: "右击以向上传送！（按住Shift键向下传送）"
+  vote:
+    name: "投票"
+    desc: "点击以投票选择游戏选项"
+  team:
+    name: "加入团队"
+    desc: "点击以选择您的团队"
+teams:
+  auto: "自动"
+  brown: "棕色"
+  orange: "橙色"
+  pink: "粉色"
+  red: "红色"
+  white: "白色"
+  lime: "绿黄色"
+  green: "绿色"
+  gray: "灰色"
+  light_gray: "浅灰色"
+  black: "黑色"
+  yellow: "黄色"
+  magenta: "洋红色"
+  cyan: "青色"
+  blue: "蓝色"
+  purple: "紫色"
+  light_blue: "浅蓝色"
+creator:
+  card_item:
+    desc: "包含 {0} 个列表" # 0: list count
